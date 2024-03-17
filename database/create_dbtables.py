@@ -92,11 +92,6 @@ def create_database_tables():
     home_odd real,
     neutral_odd real,
     away_odd real)"""
-    plml = """CREATE TABLE melPremierLeague(home_team text primary key,
-    away_team text,
-    home_odd real,
-    neutral_odd real,
-    away_odd real)"""
     plsp = """CREATE TABLE sportpesaPremierLeague(home_team text primary key,
     away_team text,
     home_odd real,
@@ -164,7 +159,6 @@ def create_database_tables():
     cur2.execute(plcombs)
     cur2.execute(plbt22)
     cur2.execute(plbtk)
-    cur2.execute(plml)
     cur2.execute(plsp)
     cur2.execute(plx1)
 
